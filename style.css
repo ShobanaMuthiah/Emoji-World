@@ -1,3 +1,18 @@
-.emo{
-    font-size: 500%;
+
+@media (min-width: 768) and (max-width: 5000px) {
+
+    .emo{
+        font-size: 500%;
+    }
+
+ }
+ @media (min-width: 576px) and (max-width: 768px) {
+
+    .emo{
+        font-size: 400%;
+    }
+.btn{
+    font-size: smaller !important;
 }
+ }
+

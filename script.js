@@ -3,8 +3,6 @@ const emoji=document.getElementById("emoji");
 const input=document.getElementById("input");
 const getemo=document.getElementById("getemoji");
 
-
-
 const get=async ()=>{
 const apiUrl=await fetch("https://emojihub.yurace.pro/api/all");
 const data1=await apiUrl.json();
@@ -12,10 +10,8 @@ const data=data1.slice(0,1000);
 // console.log(data);
 // const d=data.data;
 data.forEach(ele => {
-
-emoji.innerHTML+= ` <div class="col-md-2 mb-4">
-<div class="card">
-    
+emoji.innerHTML+= ` <div class="col-auto me-auto col-sm-3 col-md-2 mb-4">
+<div class="card">    
     <div class="card-body">
        <div class="emo"> ${ele.htmlCode[0]}</div>
         <button class="btn btn-primary">View Details</button>
@@ -28,11 +24,8 @@ button.forEach((btn,ind)=>{
         alert(`Name: ${data[ind].name}\nCategory: ${data[ind].category}\nGroup: ${data[ind].group}`)
 
     })
-
 })
 }
-
-
 );
 
 }
@@ -50,7 +43,7 @@ async ()=>{
     data1.forEach(el => {
 
         // console.log(el);
-    emoji.innerHTML+= ` <div class="col-md-3 mb-4">
+    emoji.innerHTML+= ` <div class=" col-auto me-auto col-sm-3 col-md-2 mb-4">
     <div class="card">
         
         <div class="card-body">
