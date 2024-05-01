@@ -38,6 +38,7 @@ const get = async () => {
 get(); //calling the function
 getemo.addEventListener("click", async () => {
   emoji.innerHTML = "";
+  err.innerHTML="";
   const val = input.value;
 
   //fetching data by its group value
@@ -51,7 +52,7 @@ getemo.addEventListener("click", async () => {
       //When the input field is not contain any input values it throws error message
     }
     data1.forEach((el) => {
-      // console.log(el);
+      err.innerHTML=""
       emoji.innerHTML += ` <div class=" col-auto me-auto col-sm-3 col-md-2 mb-4">
     <div class="card">
         
